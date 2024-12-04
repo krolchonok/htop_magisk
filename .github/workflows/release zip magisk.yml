@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Archive files
-        run: zip -r htop.zip . -x ".github/*"
+        run: zip -r htop.zip . -x ".github/*" -x ".git/*"
 
       - name: Upload binaries to release
         uses: svenstaro/upload-release-action@v2
