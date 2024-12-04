@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Archive files
-        run: zip -r htop.zip .
+        run: zip -r myapp.zip . -x ".github/*"
 
       - name: Upload release asset
         id: upload-release-asset
